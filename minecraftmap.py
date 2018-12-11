@@ -1,6 +1,10 @@
 from sense_hat import SenseHat
 
+from mcpi.minecraft import Minecraft
+from time import sleep
+
 sense = SenseHat()
+mc = Minecraft.create()
 
-sense.clear(255, 0, 0)
-
+mc.postToChat("Hello Minecraft!")
+sense.clear(0, 255, 0)
