@@ -6,5 +6,9 @@ from time import sleep
 sense = SenseHat()
 mc = Minecraft.create()
 
-mc.postToChat("Hello Minecraft!")
-sense.clear(0, 255, 0)
+while True:
+    x, y, z = mc.player.getTilePos()
+    block = mc.getBlock(x, y-1, z)
+    print(block)
+    sleep(0.1)
+    
