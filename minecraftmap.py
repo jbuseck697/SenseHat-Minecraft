@@ -8,23 +8,27 @@ mc = Minecraft.create()
 
 #blocks
 grass = 2
-
-water = 9
-
-sand = 12
+    
+diamond = 57
+    
+gold = 41
+    
+iron = 42
 
 #colors
-green = (0, 255, 0)
-
-blue = (0, 0, 255)
+cyan = (0, 255, 255)
 
 yellow = (255, 255, 0)
 
+white = (255, 255, 255)
+
+black = (0, 0, 0)
 #block clors
 colors = {
-    grass: green,
-    water: blue,
-    sand: yellow,
+    grass: black,
+    diamond: cyan,
+    gold: yellow,
+    iron: white,
 }
 
 
